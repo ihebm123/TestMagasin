@@ -15,17 +15,17 @@ services:
     image: ihebdevops/achatproject:1.0
     container_name: springcontainer
     ports:
-      - 8095:8095
+      - 8089:8089
     depends_on:
       - database
     networks:
       - projectdevops 
     restart: on-failure  
   angular:
-    image: dadoulanda/angular
+    image: wassim19/achatfront:1.0
     container_name: angularcontainer
     ports: 
-      - 80:80
+      - 4200:4200
     depends_on:
       - spring-boot
     networks:
