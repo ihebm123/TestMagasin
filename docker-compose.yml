@@ -22,7 +22,7 @@ services:
       - projectdevops 
     restart: on-failure  
   angular:
-    image: wassim19/achatfront:1.0
+    image: ihebdevops/achatfrontangular:1.0
     container_name: angularcontainer
     ports: 
       - 4200:4200
